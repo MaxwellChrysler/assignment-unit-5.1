@@ -24,8 +24,8 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
-let fullName = firstName + lastName;
-console.log('My fullname is' + fullname);
+let fullName = me.firstName+ ' ' + me.lastName;// I think its correct to have the ' ' space in there when im defining fullName
+console.log('My full name is ' + fullName);
 
 
 
@@ -34,9 +34,9 @@ console.log('My fullname is' + fullname);
   - Console.log your last favorite food 
 */
 
-console.log(favFoods[0]);
-console.log(favFoods[favFoods.legth-1]);// testing to see if this works for personal reference rather than make a variable and setting it to favFoods.length 
-
+console.log(me.favFoods[0]);
+console.log(me.favFoods[2]);// I tried using me.favFoods[favFoods.length-1] but that seemed 
+//to give me the error of favFoods not defined. same was true when I did me.favFoods.length
 
 
 /* 4. Change a property of an existing object.
@@ -45,8 +45,10 @@ console.log(favFoods[favFoods.legth-1]);// testing to see if this works for pers
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-shoeCount ++;
-console.log(shoeCount);
+console.log(me.shoeCount);
+me.shoeCount++; // I think this is going to be the easiest way to do it but I don't want it to be too "hard coded"
+console.log(me.shoeCount);
+
 
 
 /* 5. Add a new property to an existing object.
@@ -55,4 +57,5 @@ console.log(shoeCount);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
-me.favoriteColor = 'gray';
+me.favoriteColor = 'grayish blue'; // grey
+console.log(me.favoriteColor);
