@@ -45,9 +45,9 @@ console.log(me.favFoods[2]);// I tried using me.favFoods[favFoods.length-1] but 
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-console.log(me.shoeCount);
+console.log('I have ',me.shoeCount,' pairs of shoes');
 me.shoeCount++; // I think this is going to be the easiest way to do it but I don't want it to be too "hard coded"
-console.log(me.shoeCount);
+console.log('I now have ',me.shoeCount,' pairs of shoes');
 
 
 
